@@ -11,20 +11,23 @@ p {
   margin: 0;
 }
 
+img {
+  width: 10%;
+}
 /*********************** Header ***********************/
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #0d47a1;
+  background: #0954c5;
   padding: 15px;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 70px;
+  gap: 4.5rem;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -63,7 +66,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 1.5rem;
   color: white;
   padding: 150px 60px;
 }
@@ -74,23 +77,106 @@ button {
 
 /*********************** Features Section ***********************/
 #features {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-/* .features-section {
-} */
-
-/*********************** Sign Up Section ***********************/
-#signUp {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+  padding: 0;
+}
+li {
+  list-style: none;
 }
 
+#features article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 15rem;
+  width: 18rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#features article p {
+  text-align: center;
+  padding: 0px 20px;
+}
+/*********************** Sign Up Section ***********************/
+#signUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+#signUp h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#signUp article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 15rem;
+  width: 18rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+input {
+  width: 90%;
+  padding: 15px;
+  border: gray 1px solid;
+  border-radius: 5px;
+}
+.form-Btn {
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+.success {
+  color: green;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.counter {
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  color: #333;
+}
 /*********************** Footer ***********************/
 
 /*********************** Media Queries ***********************/

@@ -19,30 +19,64 @@
     </header>
     <!-------------------------- Main Content ---------------------------->
     <main>
-    <!--------------------------Hero Section-------------------------->
+      <!--------------------------Hero Section-------------------------->
       <section id="home" class="hero-section">
         <h1>Join the Future of Codveda</h1>
         <p>Innovative solutions for your business</p>
         <button>Get Started</button>
       </section>
       <!-------------------------------Features------------------------------->
-      <section id="features"></section>
-        <h1>Features</h1>
-        <article>
-          <h3>User-Friendly</h3>
-          <p>Intuitive interfaces and easy-to-use features</p>
-        </article>
-        <article>
-          <h3>Secure</h3>
-          <p>Advanced security measures to protect your data</p>
-        </article>
-        <article>
-          <h3>Customizable</h3>
-          <p>flexible options to tailor the app to your needs</p>
-        </article>
+      <section id="features">
+        <h2>Features</h2>
+        <ul>
+          <li>
+            <article>
+              <img src="assets/User-Friendly.png" alt="User-Friendly" />
+              <h3>User-Friendly</h3>
+              <p>Intuitive interfaces and easy-to-use features</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="assets/Secure.png" alt="Secure" />
+              <h3>Secure</h3>
+              <p>Advanced security measures to protect your data</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="assets/Customizable.png" alt="Customizable" />
+              <h3>Customizable</h3>
+              <p>Flexible options to tailor the app to your needs</p>
+            </article>
+          </li>
+        </ul>
       </section>
       <!-------------------------------Sign Up------------------------------->
-      <section id="signUp">Sign Up</section>
+      <section id="signUp">
+        <h2>Sign Up</h2>
+        <article>
+          <form id="myForm">
+
+            <input type="text" id="name" placeholder="Name" />
+            <div id="nameError" class="error"></div>
+
+            <input type="email" id="email" placeholder="Email" />
+            <div id="emailError" class="error"></div>
+
+            <input type="number" id="phone" placeholder="Phone" />
+            <div id="phoneError" class="error"></div>
+
+            <input type="password" id="password" placeholder="Password" />
+            <div class="counter" id="passCounter">0 characters</div>
+            <div id="passwordError" class="error"></div>
+
+            <button class="form-Btn" type="submit">Submit</button>
+            <div id="successMsg" class="success"></div>
+          </form>
+          <script src="index.js"></script>
+        </article>
+      </section>
     </main>
 
     <!-------------------------------Footer------------------------------->
