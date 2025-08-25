@@ -58,3 +58,10 @@ form.addEventListener("submit", (e) => {
     passCounter.textContent = "0 characters"; // reset counter
   }
 });
+
+const burger = document.querySelector(".burger");
+const navMenu = document.querySelector("nav ul");
+
+burger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
